@@ -152,6 +152,8 @@ function onLoginForm(event) {
     email,
     password,
   };
+
+  console.log(dataForm);
 }
 
 // ex 9
