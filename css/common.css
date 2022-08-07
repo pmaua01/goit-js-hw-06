@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+input {
+  padding: 8px;
+  font: inherit;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+
+
+.gallery__flex {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  height: 600px;
+
+}
+
+.gallery__item {
+  flex: 1;
+  transition: flex-grow 0.64s ease-in-out, transform 0.64s ease-in-out;
+
+}
+
+.gallery__item:hover {
+  flex-grow: 10;
+
+
+  /* при наведении меняем значение flex */
+}
+
+.gallery__item img {
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: block;
+
+
+}
